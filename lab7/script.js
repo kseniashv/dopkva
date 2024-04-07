@@ -7,22 +7,22 @@ alert(`Добро пожаловать в игру Угадайка, ${userName}
 // Функция для игры
 function guessNumber() {
     let userInput = parseInt(prompt("Угадайте число от 1 до 10. У Вас " + attempts + " попыток."));
-    if (userInput === randomNumber && userInput > 0 ) {
+    if (userInput === randomNumber) {
         alert("Поздравляем! Вы угадали число!");
         playAgain();
     } 
-    else if (userInput > randomNumber && userInput > 0) {
+    else if (userInput > randomNumber && userInput > 0 && userInput <= 10) {
         alert("Загаданное число меньше.");
         attempts--;
         checkAttempts();
     } 
-    else if (userInput < randomNumber && userInput > 0) {
+    else if (userInput < randomNumber && userInput > 0 && userInput <= 10) {
         alert("Загаданное число больше.");
         attempts--;
         checkAttempts();
     } 
     else {
-        alert("Вы ввели не число или число меньше нуля. Начните игру заново.");
+        alert("Вы ввели не число или число вне диапазона. Начните игру заново.");
         alert("Пожалуйста, введите число от 1 до 10");
         guessNumber();
     }
