@@ -1,6 +1,6 @@
 'use strict'
 // Генератор случайного числа от 1 до 10
-const randomNumber = Math.floor(Math.random() * 10) + 1;
+let randomNumber = Math.floor(Math.random() * 10) + 1;
 let attempts = 5; // число попыток
 let userName = prompt("Введите ваше имя: ")
 alert(`Добро пожаловать в игру Угадайка, ${userName}!`)
@@ -41,9 +41,9 @@ function checkAttempts() {
 
 // Функция для перезапуска игры
 function playAgain() {
-    if (confirm("Хотите сыграть еще раз?")) {
-        attempts = 5;
+    if (confirm("Хотите сыграть еще раз?") === true) {
         randomNumber = Math.floor(Math.random() * 10) + 1;
+        attempts = 5;
         guessNumber();
     } 
     else {
