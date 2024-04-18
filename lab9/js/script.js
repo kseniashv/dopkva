@@ -107,8 +107,8 @@ function sub() {
     if (!having(checkName, checkPhone, checkEmail, checkAge)) {
         document.getElementById("but1").disabled = true;
         setTimeout(function () { document.getElementById("but1").disabled = false; }, 3000); return false;
-
-    } else {
+    } 
+    else {
         return true;
     }
 }

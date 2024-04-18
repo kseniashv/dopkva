@@ -162,10 +162,10 @@ header{
         margin-top: 40px;
     }
     .input{
-        width:50%;
+        width:80%;
     }
     .but{
-        width:50%;
+        width:80%;
     }
 }
 @media screen and (max-width: 992px) 
@@ -192,15 +192,3 @@ header{
         margin-bottom: 40px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

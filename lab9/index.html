@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -55,17 +56,20 @@
     <section class="form1">
         <div class="container">
             <h2 class="tit"> Форма заказа консультации</h2>
-            <form id="myform" name="myform">
+            <!-- <form action="#" method = "post" enctype="multipart/form-data"></form> -->
+            <form>
             <div class="block3">
                 <p class="tex"> ФИО</p>
                 <input name="fio" id="fio" type="text" class="input" placeholder="ФИО" oninput="checkName();">
                 <span class="fio_span" id="fio_span"></span>
+
                 <p class="tex"> Номер телефона</p>
                 <input type="tel" name="tel" id="phone" class="input" placeholder="Телефон" oninput="checkPhone();">
 
                 <p class="tex">Почта</p>
                 <input id="mail" name="mail" class="input" placeholder="Почта" oninput=" checkEmail();">
                 <span class="mail_span" id="mail_span"></span>
+
                 <p class="tex">Укажите, сколько вам полных лет</p>
 
                 <input name="age" id="age" type="number" class="input" placeholder="Возраст" oninput="checkAge();">
@@ -78,7 +82,8 @@
     <section class="form">
         <div class="container">
             <h2 id = "f2" class="tit"> Форма заказа обратного звонка</h2>
-            <form action="#" method = "post" enctype="multipart/form-data">
+            <form>
+            <!-- <form action="#" method = "post" enctype="multipart/form-data"> -->
             <div class="block3">
                 <input type="text" class="input" placeholder="Имя" required>
                 <input type="email" class="input" placeholder="Введите свой email" required>
