@@ -1,7 +1,7 @@
 import React from "react";
-import pizza_count from '../components/up';
+import Updater from '../components/Updater';
 
-function pizza(props) {
+function Pizza(props) {
     return (
         <div className="main_blocks">
             <img src={props.img} alt="pizza" />
@@ -21,4 +21,4 @@ function pizza(props) {
     );
 }
 
-export default pizza;
+export default Pizza;

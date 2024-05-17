@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import img2 from '../images/picture.png'
 
-function pizza_count() {
+function Updater() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ function pizza_count() {
     </div>
   );
 }
-export default pizza_count;
+export default Updater;

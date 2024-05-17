@@ -1,4 +1,4 @@
-import pizza from "../src/components/pizza";
+import Pizza from "../src/components/Pizza";
 import img1 from '../src/images/pizza.jpg';
 function App() {
   return (
