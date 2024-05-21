@@ -1,0 +1,59 @@
+
+h1 {
+    color: red;
+}
+h2 {
+    color: white;
+    background-color: green;
+}
+.wide {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-indent: 60px;
+}
+.red {
+    color:red;
+}
+.blue {
+    color: white;
+    background-color: blue;
+    word-break: break-all;
+    width: 148px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+a:active{
+    text-decoration: underline;
+    color:purple;
+}
+.ots {
+    text-indent: 40px;
+}
+
+/*.input1 {
+   input type:text;
+}
+.input2 {
+    input type:email;
+}
+.input3 {
+    input type:tel;
+ } */
+li:first-child {
+    font-weight: 700;
+    border:1px solid black; 
+    border-width:1px 1px 0px 1px;
+}
+      
+li:last-child {
+    font-weight: 700;
+    border:1px solid black;
+    border-width:0px 1px 1px 1px;
+}
+      
+li:nth-child(2) {
+    font-weight: 700;
+    border:1px solid black;
+}

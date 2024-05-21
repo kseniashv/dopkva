@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <img class="logo" src="img/logo.png" alt=""> 
+           <div class="wrapper">
+                <div class="offer">                
+                    <h1 class="title">С помощью нас<br> 
+                        вы сможете создать то, о чем </h1>
+                        <span class="title_span"> желаете!</span>
+                        <p class="offer_text"> Наши возможности + опыт позволят вам достичь огромного успеха. 
+                            Мы верим в вас! И знаем это на все 100%. Вас не остановить!
+                        </p>
+                        <a href="#" class="btn"> Узнать больше... </a>
+                </div>
+            <img class="header_img" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="main_title"> Что вам необходимо?</h2>
+            <div class="main_block">
+                <div class="blocks">
+                    <img src="img/f3.png" alt="pic1">
+                    <h3>Первый блок</h3>
+                    <p>Lofgdjs ttyui poiyt fghjj ghjkoo qqwertydfghjk</p>
+                </div>
+                <div class="blocks">
+                    <img id="im" src="img/f4.png" alt="pic2">
+                    <h3>Второй блок</h3>
+                    <p>Lofgdjs ttyui poiyt fghjj ghjkoo qqwertydfghjk</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f5.png" alt="pic3">
+                    <h3>Третий блок</h3>
+                    <p>Lofgdjs ttyui poiyt fghjj ghjkoo qqwertydfghjk</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="form1">
+        <div class="container">
+            <h2 class="tit"> Форма заказа консультации</h2>
+            <form id="myform" name="myform">
+            <div class="block3">
+                <p class="tex"> ФИО</p>
+                <input name="fio" id="fio" type="text" class="input" placeholder="ФИО" oninput="checkName();">
+                <span class="fio_span" id="fio_span"></span>
+                <p class="tex"> Номер телефона</p>
+                <input type="tel" name="tel" id="phone" class="input" placeholder="Телефон" oninput="checkPhone();">
+
+                <p class="tex">Почта</p>
+                <input id="mail" name="mail" class="input" placeholder="Почта" oninput=" checkEmail();">
+                <span class="mail_span" id="mail_span"></span>
+                <p class="tex">Укажите, сколько вам полных лет</p>
+
+                <input name="age" id="age" type="number" class="input" placeholder="Возраст" oninput="checkAge();">
+                <button type="submit" class="but1" id="but1" onclick="sub()"> Отправить запрос </button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <h2 id = "f2" class="tit"> Форма заказа обратного звонка</h2>
+            <form action="#" method = "post" enctype="multipart/form-data">
+            <div class="block3">
+                <input type="text" class="input" placeholder="Имя" required>
+                <input type="email" class="input" placeholder="Введите свой email" required>
+                <input type="tel" class="input" placeholder="Телефон" required>
+                <input type="text" class="input" placeholder="Какая тема вас интересует?" minlength="5" maxlength="15" required>
+                <button type="submit" class="but"> Отправить вопрос! </button>
+            </form>
+            </div>
+        </div>
+    </section>
+    <section class="bl4">
+    </section>
+    <section class="bl5">
+        <p class="position">© Все на этом сайте защищено</p>
+    </section>
+    <script src="/js/script.js">
+    </script>
+</body>
+</html>
